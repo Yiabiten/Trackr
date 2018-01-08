@@ -1,0 +1,151 @@
+body {
+  background: white;
+}
+
+.app_footer {
+  text-align: center;
+  margin-top: 45px;
+  font-family: "Lato", helvetica, Arial, Sans-serif;
+}
+
+.board {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  padding: 15px;
+  min-width: 1000px;
+  width: 80%;
+  margin: 0 auto;
+  align-content: strech;
+}
+
+.boardColumn {
+  font-family: "Lato", helvetica, Arial, Sans-serif;
+  flex-basis: 300px;
+  flex-grow: 1;
+  margin: 0 5px;
+}
+.boardColumn .boardColumn__header {
+  padding: 5px;
+  margin-bottom: 10px;
+  border-bottom: 5px solid #f5f5f5;
+}
+.boardColumn .boardColumn__title {
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin: 0;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: normal;
+  margin: 0 5px 0 0;
+  word-wrap: break-word;
+}
+.boardColumn .boardColumn__taskList {
+  background: #f5f5f5;
+  padding: 20px 10px;
+  min-height: 600px;
+  height: 600px;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.boardColumn.boardColumn--DONE .taskCard {
+  opacity: 0.7;
+}
+.boardColumn.boardColumn--DONE .taskCard .taskCard__title {
+  text-decoration: line-through;
+}
+
+.taskCard {
+  font-family: "Lato", helvetica, Arial, Sans-serif;
+  border: 1px solid #E0E1E2;
+  border-radius: 5px;
+  padding: 15px 15px 10px 15px;
+  background: white;
+  position: relative;
+  margin-bottom: 5px;
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.06);
+}
+.taskCard:hover {
+  cursor: pointer;
+}
+.taskCard:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  width: 4px;
+  background: red;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.taskCard .taskCard__title {
+  margin: 0;
+  color: #333;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.taskCard .taskCard__epicLink-title {
+  background: #9b59b6;
+  padding: 3px 10px;
+  font-size: 13px;
+  border-radius: 5px;
+  color: white;
+}
+.taskCard .taskCard__footer {
+  display: flex;
+  margin-top: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+.taskCard .taskCard__type {
+  font-size: 12px;
+  font-weight: bold;
+}
+.taskCard .taskCard__id {
+  font-size: 12px;
+  font-weight: 300;
+  color: #CDCED0;
+  margin-right: 10px;
+  font-variant: small-caps;
+  font-weight: 500;
+}
+.taskCard .taskCard__avatar {
+  width: 20px;
+  height: 20px;
+  border-radius: 500px;
+}
+.taskCard .taskCard__id, .taskCard .taskCard__avatar {
+  vertical-align: middle;
+}
+
+.taskCard.taskCard--HIGHEST:after {
+  background: #e74c3c;
+}
+.taskCard.taskCard--HIGHEST .taskCard__type {
+  color: #e74c3c;
+}
+
+.taskCard.taskCard--HIGH:after {
+  background: #e67e22;
+}
+.taskCard.taskCard--HIGH .taskCard__type {
+  color: #e67e22;
+}
+
+.taskCard.taskCard--MEDIUM:after {
+  background: #f1c40f;
+}
+.taskCard.taskCard--MEDIUM .taskCard__type {
+  color: #f1c40f;
+}
+
+.taskCard.taskCard--LOW:after {
+  background: #27ae60;
+}
+.taskCard.taskCard--LOW .taskCard__type {
+  color: #27ae60;
+}

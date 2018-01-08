@@ -1,1 +1,147 @@
-hey
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>WeCanAble!</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <br/>
+  <div id="app">
+    <div class="board">
+      <div class="boardColumn boardColumn--TODO">
+        <header class="boardColumn__header">
+          <h1 class="boardColumn__title">To do</h1>
+        </header>
+        <div id="TODOList" class="container boardColumn__taskList">
+          <div class="taskCard taskCard--MEDIUM">
+            <header class="taskCard__header">
+              <h4 class="taskCard__title">Create App with react-router</h4>
+              <div class="taskCard__epicLink-wrapper">
+                <span class="taskCard__epicLink-title">React buidings</span>
+              </div>
+            </header>
+            <footer class="taskCard__footer">
+              <span class="taskCard__type">MEDIUM</span>
+              <div>
+                <span class="taskCard__id">REACT-5</span>
+                <img class="taskCard__avatar" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAemAAAAJGFkOGZiYTIwLTU0YjUtNGY0Ni1hM2ZhLThlY2Y2NzU0Mzk3MA.jpg">
+              </div>
+            </footer>
+          </div>
+          <div class="taskCard taskCard--LOW">
+            <header class="taskCard__header">
+              <h4 class="taskCard__title">Do a little project with ReduxJS</h4>
+              <div class="taskCard__epicLink-wrapper">
+                <span class="taskCard__epicLink-title">React buidings</span>
+              </div>
+            </header>
+            <footer class="taskCard__footer">
+              <span class="taskCard__type">LOW</span>
+              <div>
+                <span class="taskCard__id">REACT-8</span>
+                <img class="taskCard__avatar" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAemAAAAJGFkOGZiYTIwLTU0YjUtNGY0Ni1hM2ZhLThlY2Y2NzU0Mzk3MA.jpg">
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+      <div class="boardColumn boardColumn--INPROGRESS">
+        <header class="boardColumn__header">
+          <h1 class="boardColumn__title">In Progress</h1>
+        </header>
+        <div id="INPROGRESSList" class="container  boardColumn__taskList">
+          <div class="taskCard taskCard--MEDIUM">
+            <header class="taskCard__header">
+              <h4 class="taskCard__title">Create some little components</h4>
+              <div class="taskCard__epicLink-wrapper">
+                <span class="taskCard__epicLink-title">React buidings</span>
+              </div>
+            </header>
+            <footer class="taskCard__footer">
+              <span class="taskCard__type">MEDIUM</span>
+              <div>
+                <span class="taskCard__id">REACT-4</span>
+                <img class="taskCard__avatar" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAemAAAAJGFkOGZiYTIwLTU0YjUtNGY0Ni1hM2ZhLThlY2Y2NzU0Mzk3MA.jpg">
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+      <div class="boardColumn boardColumn--REVIEWEING">
+        <header class="boardColumn__header">
+          <h1 class="boardColumn__title">REVIEWEING</h1>
+        </header>
+        <div id="REVIEWINGList" class="boardColumn__taskList">
+          <div class="taskCard taskCard--MEDIUM">
+            <header class="taskCard__header">
+              <h4 class="taskCard__title">Create some little components</h4>
+              <div class="taskCard__epicLink-wrapper">
+                <span class="taskCard__epicLink-title">React buidings</span>
+              </div>
+            </header>
+            <footer class="taskCard__footer">
+              <span class="taskCard__type">MEDIUM</span>
+              <div>
+                <span class="taskCard__id">REACT-4</span>
+                <img class="taskCard__avatar" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAemAAAAJGFkOGZiYTIwLTU0YjUtNGY0Ni1hM2ZhLThlY2Y2NzU0Mzk3MA.jpg">
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+      <div class="boardColumn boardColumn--DONE">
+        <header class="boardColumn__header">
+          <h1 class="boardColumn__title">Done</h1>
+        </header>
+        <div id="DONEList" class="boardColumn__taskList">
+          <div class="taskCard taskCard--HIGHEST">
+            <header class="taskCard__header">
+              <h4 class="taskCard__title">Read WebPack documentation</h4>
+              <div class="taskCard__epicLink-wrapper">
+                <span class="taskCard__epicLink-title">React buidings</span>
+              </div>
+            </header>
+            <footer class="taskCard__footer">
+              <span class="taskCard__type">HIGHEST</span>
+              <div>
+                <span class="taskCard__id">REACT-1</span>
+                <img class="taskCard__avatar" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAemAAAAJGFkOGZiYTIwLTU0YjUtNGY0Ni1hM2ZhLThlY2Y2NzU0Mzk3MA.jpg">
+              </div>
+            </footer>
+          </div>
+          <div class="taskCard taskCard--HIGH">
+            <header class="taskCard__header">
+              <h4 class="taskCard__title">Try Hello world</h4>
+              <div class="taskCard__epicLink-wrapper">
+                <span class="taskCard__epicLink-title">React buidings</span>
+              </div>
+            </header>
+            <footer class="taskCard__footer">
+              <span class="taskCard__type">HIGH</span>
+              <div>
+                <span class="taskCard__id">REACT-3</span>
+                <img class="taskCard__avatar" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAemAAAAJGFkOGZiYTIwLTU0YjUtNGY0Ni1hM2ZhLThlY2Y2NzU0Mzk3MA.jpg">
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.js" >  </script>
+  <script>
+    dragula([ document.getElementById('TODOList'),
+              document.getElementById('INPROGRESSList'),
+              document.getElementById('REVIEWINGList'),
+              document.getElementById('DONEList')
+            ], {  revertOnSpill: true });
+  </script>
+
+</body>
+
+</html>
